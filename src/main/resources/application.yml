@@ -1,2 +1,9 @@
 server:
-  port: 8888
+  port: "8888"
+amazonProperties:
+  bucketName: "fdas"
+  accessKey: "sandbox"
+  secretKey: "s3cr3t"
+  endpointUrl: "http://127.0.0.1:8000"
+
+
