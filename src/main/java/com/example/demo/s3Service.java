@@ -65,6 +65,7 @@ public class s3Service {
 
     public String findByName(String fileName){
         if(!s3.doesObjectExist(BucketName,fileName)) return "File does not exist";
+
         return generateUrl(fileName,HttpMethod.GET);
     }
 
