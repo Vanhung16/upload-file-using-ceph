@@ -1,12 +1,10 @@
-package com.example.demo;
+package com.example.demo.controller;
 
+import com.example.demo.services.s3Service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/upload")
@@ -29,7 +27,7 @@ public class uploadFileController {
 
     @PostMapping("/byurl")
     @ResponseStatus(HttpStatus.CREATED)
-    public String uploadByUrl(@RequestParam("fileName") String fileName){
+    public String uploadByUrl(@RequestParam("fileName") String fileName) {
         return util.uploadByUrl(fileName);
     }
 //    @PostMapping("/{bucketName}")

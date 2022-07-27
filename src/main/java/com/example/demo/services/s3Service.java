@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.services;
 
 import com.amazonaws.HttpMethod;
 import com.amazonaws.services.s3.AmazonS3;

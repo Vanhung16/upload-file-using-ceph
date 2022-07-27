@@ -5,5 +5,9 @@ amazonProperties:
   accessKey: "sandbox"
   secretKey: "s3cr3t"
   endpointUrl: "http://127.0.0.1:8000"
+sendmail:
+  apiKey: "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"
+  fromEmail: "hungnguyenvan209@gmail.com"
+  fromName: "Nguyen Van Hung"
 
 
